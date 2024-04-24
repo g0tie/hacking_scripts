@@ -21,4 +21,10 @@ awk '{print tolower($2 "." $1)}' "$1" >> "$output_file"
 # Keep first letter, put a dot and lowercase everything
 awk '{print tolower( substr($1, 1, 1) "." $2)}' "$1" >> "$output_file"
 
+# Same as above without the dot
+awk '{print tolower( substr($1, 1, 1) $2)}' "$1" >> "$output_file"
+
+#same with a - 
+awk '{print tolower( substr($1, 1, 1) "-" $2)}' "$1" >> "$output_file"
+
 echo "Operation Success, file at: $(pwd)/$output_file"
