@@ -19,6 +19,6 @@ sed  -e 's/ /./g' -e 's/[[:upper:]]/\L&/g' "$1" > "$output_file"
 awk '{print tolower($2 "." $1)}' "$1" >> "$output_file"
 
 # Keep first letter, put a dot and lowercase everything
-awk '{ first_letter = substr($1, 1, 1) #get first letter print tolower( substr($1, 1, 1) "." $2) }'
+awk '{print tolower( substr($1, 1, 1) "." $2)}' "$1" >> "$output_file"
 
 echo "Operation Success, file at: $(pwd)/$output_file"
