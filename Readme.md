@@ -7,3 +7,5 @@
 - **testUserAgents.py**: Make request with custom user-agent based on a text list passed as argument to test server responses 
 - **crackMD5bySalt.py**: Crack MD5 hash with known salt using a wordlist 
 
+### Bash
+- **lower_name_permutations.sh**: Script to generate a new wordlist of lowercase username permutations based on an existing username wordlist
