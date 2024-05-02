@@ -9,3 +9,4 @@
 
 ### Bash
 - **lower_name_permutations.sh**: Script to generate a new wordlist of lowercase username permutations based on an existing username wordlist
+- **ssrf_portscan.sh**: Script to make internal localhost portscan on webserver vulnerable to SSRF
